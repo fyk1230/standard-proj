@@ -1,0 +1,68 @@
+swagger: '2.0'
+info:
+  title: Pixabay API
+  version: 1.0.0
+host: pixabay.com
+basePath: /api
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /:
+    get:
+      summary: Search images
+      description: |
+        This endpoint returns a list of images based on the provided query and filters.
+      parameters:
+        - in: query
+          name: key
+          type: string
+          required: true
+          description: |
+            Your API key.
+        - in: query
+          name: q
+          type: string
+          required: false
+          description: |
+            A URL-encoded search term.
+        - in: query
+          name: image_type
+          type: string
+          required: false
+          description: |
+            The type of image to retrieve. Valid values are "all", "photo", "illustration", and "vector". If omitted, defaults to "all".
+      responses:
+        '200':
+          description: |
+            A list of images matching the search criteria.
+          schema:
+            type: object
+            properties:
+              totalHits:
+                type: integer
+                description: The total number of hits matching the search criteria.
+              hits:
+                type: array
+                description: A list of images matching the search criteria.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      description: The ID of the image.
+                    pageURL:
+                      type: string
+                      description: The URL of the page containing the image.
+                    type:
+                      type: string
+                      description: The type of the image, e.g. "photo" or "illustration".
+                    tags:
+                      type: string
+                      description: A comma-separated list of tags describing the image.
+                    previewURL:
+                      type: string
+                      description: The URL of a small preview image.
