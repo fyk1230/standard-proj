@@ -1,7 +1,7 @@
-# 標準化向けサンプルコード
-## WebAPI　iPadアプリケーション
+# 標準化向けサンプル
+## WebAPI　iOSアプリケーション
 
-iPad向け画像検索アプリです。
+PixabayAPIを利用し、検索した文字列の画像を検索するiOSアプリです。
 ![sampleApp](https://user-images.githubusercontent.com/126561077/227759269-2d51ebf2-a144-44d2-a994-9f02e773b0e9.gif)
 
 ## AWSアーキテクチャ図
