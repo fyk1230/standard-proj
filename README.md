@@ -6,6 +6,7 @@ PixabayAPIを利用し、入力した文字に関する画像を検索するiOS�
 
 ## AWSアーキテクチャ図
 ![sampleApp](https://raw.githubusercontent.com/fyk1230/standard-proj/main/aws-arch.drawio.svg)
+![sampleApp](https://raw.githubusercontent.com/fyk1230/standard-proj/main/aws-arch.drawio.svg)
 
 ## API仕様書
 http://localhost:8001/
