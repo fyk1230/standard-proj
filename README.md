@@ -10,3 +10,4 @@ PixabayAPIを利用し、入力した文字に関する画像を検索するiOS�
 ## API仕様書
 http://localhost:8001/
 →GithubPagesに移管可能
+ 
